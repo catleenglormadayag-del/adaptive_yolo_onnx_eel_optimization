@@ -79,6 +79,8 @@ C:\EelOnnx
 │   │
 │   └── 20
 │       ├── test_image333.jpg
+
+```
 Images inside folder `1` have a manual count of 1 eel, images inside folder `2` have a manual count of 2 eels, and so on.
 
 ## Model File
