@@ -33,10 +33,11 @@ The main script is:
 adaptive_yolo_onnx_eel_optimization.py
 ```
 
-## Dataset Folder Structure
+## Dataset Project Folder Structure
 
-The test images must be organized in folders where each folder name represents the manual eel count.
+The project directory is organized into separate folders for **threshold optimization** and **independent testing**. The optimization folder is used to determine the best confidence and IoU threshold combination, while the independent testing folder is used to evaluate the final optimized configuration on a separate set of images.
 
+```text
 C:\EelOnnx
 │
 ├── best.onnx
@@ -78,7 +79,6 @@ C:\EelOnnx
 │   │
 │   └── 20
 │       ├── test_image333.jpg
-
 Images inside folder `1` have a manual count of 1 eel, images inside folder `2` have a manual count of 2 eels, and so on.
 
 ## Model File
