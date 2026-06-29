@@ -7,7 +7,9 @@ The system compares the performance of a baseline YOLO-ONNX inference configurat
 ## Overview
 Counting eels using object detection is challenging because eels have elongated bodies and often overlap with one another. These conditions may cause missed detections, false detections, duplicate bounding boxes, and counting errors. To address this problem, this pipeline performs adaptive threshold optimization by testing several confidence and IoU threshold combinations.
 
-The best threshold configuration is selected based on the highest mean counting accuracy, lower MAE, lower RMSE, and lower inference time. The optimized YOLO-ONNX output is then compared with the baseline YOLO-ONNX setting.
+This pipeline was also developed to help developers and researchers select a suitable confidence and IoU threshold based on their own dataset and counting performance. Instead of relying only on the default YOLO threshold values or adopting threshold settings from related literature, the system uses actual dataset results to identify the most effective configuration. This makes the threshold selection more data-driven and more appropriate for the specific object, environment, and counting condition being tested.
+
+The best threshold configuration is selected based on the highest mean counting accuracy, lower MAE, lower RMSE, and lower inference time. The optimized YOLO-ONNX output is then compared with the baseline YOLO-ONNX setting to determine whether the optimized thresholds improve counting performance.
 
 ## Main Features
 
