@@ -37,29 +37,47 @@ adaptive_yolo_onnx_eel_optimization.py
 
 The test images must be organized in folders where each folder name represents the manual eel count.
 
-Example folder structure:
-
-```text
 C:\EelOnnx
 │
 ├── best.onnx
 ├── adaptive_yolo_onnx_eel_optimization.py
+├── optimized_yolo_onnx_eel_testing.py
 │
-├── 1
-│   ├── image001.jpg
-│   ├── image002.jpg
+├── threshold optimization 333
+│   │
+│   ├── 1
+│   │   ├── image001.jpg
+│   │   ├── image002.jpg
+│   │
+│   ├── 2
+│   │   ├── image003.jpg
+│   │   ├── image004.jpg
+│   │
+│   ├── 3
+│   │   ├── image005.jpg
+│   │
+│   ├── ...
+│   │
+│   └── 20
+│       ├── image333.jpg
 │
-├── 2
-│   ├── image003.jpg
-│   ├── image004.jpg
-│
-├── 3
-│   ├── image005.jpg
-│
-...
-├── 20
-│   ├── image333.jpg
-```
+├── independent images
+│   │
+│   ├── 1
+│   │   ├── test_image001.jpg
+│   │   ├── test_image002.jpg
+│   │
+│   ├── 2
+│   │   ├── test_image003.jpg
+│   │   ├── test_image004.jpg
+│   │
+│   ├── 3
+│   │   ├── test_image005.jpg
+│   │
+│   ├── ...
+│   │
+│   └── 20
+│       ├── test_image333.jpg
 
 Images inside folder `1` have a manual count of 1 eel, images inside folder `2` have a manual count of 2 eels, and so on.
 
